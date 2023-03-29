@@ -1,0 +1,113 @@
+/* 초기화 */
+* {
+    margin: 0;     /* (바깥) 여백 */
+    padding: 0;    /* (안)   여백 */
+}
+html {
+    scroll-behavior: smooth; /* 스크롤 : 부드럽게 */
+}
+.bg-blue {
+    background-color:#2677F0;    /* 배경-색상 */
+    height: 200px;                 /* 높이 */
+}
+#avatar {
+    background-color: goldenrod;
+    width: 170px;   /* 가로 폭 */
+    height: 170px;  /* 세로 높이 */
+    border-radius: 50%;   /* 테두리-반경 */
+    overflow: hidden;    /* 넘침 */
+    margin: 0 auto;      /* 가로 중앙에 배치 */
+    position: relative;  /* 위치 : 상대적인 기준 */
+    top: 100px;
+}
+.summary {
+    width: 50%;     /* 가로 폭 */
+    margin: 100px auto; /* 여백 : 상,하0  좌,우 auto(알아서) */
+    text-align: center; /* 텍스트-정렬: 가운데 */
+}
+.name {
+    color: black;
+}
+.job {
+    color: gray;
+}
+.contact {
+    color: lightgray;
+}
+.greeting {
+    text-align: center
+}
+.greeting h2 { /* greeting 클래스 안에 있는 h2 태그를 스타일 */
+    color: rgb(90, 90, 90);
+    font-size: 20px;
+}
+.greeting p {
+    color: gray;
+}
+
+.info {
+    text-align: center;
+}
+.info h2 {
+    margin: 20px 0;    /* (바깥)여백 : 상하 20px, 좌우 0 */
+}
+.info ul li {
+    display: inline-block;
+    margin: 30px;     /* (바깥)여백 : 상하좌우 모두 30px */
+    vertical-align: text-top; /* 수직 정렬 기준 : 텍스트 윗쪽 */
+}
+.info ul li p {
+    margin: 20px 0;
+}
+.job-career, .freelancer-career, .volunteer-career {
+    text-align: center
+}
+.job-career ul, .freelancer-career ul, .volunteer-career ul {
+    margin: 30px 100px
+}
+.travel-spot h2, .movie-list h2 {
+    margin: 20px 0
+}
+.travel-spot, .movie-list {
+    text-align: center;
+}
+.travel-spot li, .movie-list li {
+    display: inline-block; /* 블럭인데 인라인처럼 배치하게 하는 속성 */
+    width: 40%;
+}
+.travel-spot li img, .movie-list li img {
+    width: 100%;
+    object-fit: cover;   /* 사진의 크기를 공간에 알맞게 늘리거나 줄이게 */
+}
+.travel-spot li p, .movie-list li p {
+    padding: 10px 0 20px 0; /* 위 오른쪽 아래 왼쪽 순서로 여백 적용 */
+}
+
+.owner {
+    background-color: #2677F0;
+    padding: 30px 0;
+    text-align: center;
+}
+.owner p {
+    display: inline-block;
+    margin: 0 150px 0 0;
+}
+.owner p, .owner a { color: white }
+
+
+/* media query */
+@media screen and (max-width: 480px) {
+    #avatar-box {
+        background-color: #2677F0;
+    }
+}
+@media screen and (max-width: 390px) {
+    #avatar-box {
+        background-color: #7326F0;
+    }
+}
+@media screen and (max-width: 360px) {
+    #avatar-box {
+        background-color: #26D8F0;
+    }
+}
